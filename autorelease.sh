@@ -27,7 +27,7 @@ git branch   $TMPBRANCH
 git checkout $TMPBRANCH
 
 git rm .gitignore
-git rm .travis.yml
+echo "language: c" > .travis.yml
 
 bash autogen.sh
 ./configure
