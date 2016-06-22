@@ -39,5 +39,5 @@ mv dontpanic-$VERSION/* .
 
 git add .
 git commit -m "release $VERSION"
-git tag dontpanic-$VERSION
+git tag $VERSION
 git checkout master
