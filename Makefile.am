@@ -5,3 +5,6 @@ EXTRA_DIST = autogen.sh
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = src/dontpanic.pc
+
+test:
+	prove -v t
