@@ -27,6 +27,7 @@ git branch   $TMPBRANCH
 git checkout $TMPBRANCH
 
 git rm .gitignore
+git rm .travis.yml
 
 bash autogen.sh
 ./configure
