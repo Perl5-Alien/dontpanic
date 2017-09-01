@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([dontpanic], [1.00], [joel.a.berger@gmail.com])
+AC_INIT([dontpanic], [1.01], [joel.a.berger@gmail.com])
 AC_CONFIG_AUX_DIR(config)
 AC_CONFIG_SRCDIR([src/libdontpanic.h])
 AC_CONFIG_HEADERS([config.h])
