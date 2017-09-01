@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = foreign
 ACLOCAL_AMFLAGS = -I m4
 SUBDIRS = src
-EXTRA_DIST = autogen.sh
+EXTRA_DIST = autogen.sh README.md LICENSE
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = src/dontpanic.pc
