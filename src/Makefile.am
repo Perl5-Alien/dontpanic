@@ -11,4 +11,7 @@ include_HEADERS = libdontpanic.h
 bin_PROGRAMS = dontpanic
 dontpanic_SOURCES = main.c
 dontpanic_LDADD   = libdontpanic.la
+
+if STATIC_ENABLED
 dontpanic_LDFLAGS = -static
+endif

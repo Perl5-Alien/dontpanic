@@ -25,6 +25,7 @@ AM_PROG_LIBTOOL
 
 LT_INIT
 AM_INIT_AUTOMAKE
+AM_CONDITIONAL([STATIC_ENABLED], [test "$enable_static" != "no"])
 
 AC_CONFIG_FILES([src/Makefile Makefile])
 AC_OUTPUT
