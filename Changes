@@ -1,0 +1,16 @@
+Revision history for dontpanic
+
+1.02 7 September 2017
+  - Do not force static linking for dontpanic tool when static linking is disabled.
+    This fixes a bug where executable depended on dynamic library in the build tree
+    (ppisar++ gh#3)
+  - Created this Changes file, and backfilled where memory allows
+
+1.01 1 September 2017
+  - Include LICENSE and README.md
+
+1.00 22 June 2017
+  - Version created arbitrarily for testing
+
+0.90 22 June 2017
+  - Version created arbitrarily for testing
