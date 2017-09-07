@@ -3,6 +3,14 @@
 This software provides a very simple library and executable used in testing
 [Alien::Base](https://metacpan.org/pod/Alien::Base).
 
+# AUTHOR
+
+Original Author: Joel Berger
+
+Current Maintainer:  Graham Ollis (plicease)
+
+Contributors: Petr Pisar (ppisar)
+
 # LICENSE
 
 Copyright (c) 2012 Joel Berger
