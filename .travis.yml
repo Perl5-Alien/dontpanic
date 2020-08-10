@@ -12,3 +12,8 @@ script:
   - ./configure
   - make
   - make check
+
+branches:
+  only:
+    - main
+
