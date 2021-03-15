@@ -1,0 +1,40 @@
+name: linux
+
+on:
+  push:
+    branches: ['*']
+    tags-ignore: ['*']
+  pull_request:
+
+jobs:
+  c:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        compiler:
+          - cc: gcc
+          - cc: clang
+    
+    env:
+      CC: ${{ matrix.compiler.cc }}
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Autotools
+        run: |
+          bash autogen.sh
+      
+      - name: Configure
+        run: |
+          ./configure
+      
+      - name: Build
+        run: |
+          make
+      
+      - name: Test
+        run: |
+          make check    
