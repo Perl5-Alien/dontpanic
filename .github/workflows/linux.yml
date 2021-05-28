@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         compiler:
           - cc: gcc
@@ -37,4 +38,9 @@ jobs:
       
       - name: Test
         run: |
-          make check    
+          make check
+
+      - name: CPAN log
+        if: ${{ failure() }}
+        run: |
+          cip exec bash -c 'cat $HOME/.cpanm/latest-build/build.log'
